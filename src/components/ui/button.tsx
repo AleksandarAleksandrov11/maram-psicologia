@@ -5,21 +5,29 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-md",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-md",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-md",
+        ghost: "hover:bg-accent hover:text-accent-foreground rounded-md",
         link: "text-primary underline-offset-4 hover:underline",
+        // MARAM Custom Variants
+        elegant: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-none tracking-wide uppercase text-xs font-sans",
+        "elegant-outline": "border border-foreground bg-transparent text-foreground hover:bg-foreground hover:text-background rounded-none tracking-wide uppercase text-xs font-sans",
+        hero: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-none tracking-wider uppercase text-xs font-sans px-8 py-4",
+        "hero-outline": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground rounded-none tracking-wider uppercase text-xs font-sans px-8 py-4",
+        nav: "bg-transparent text-foreground hover:text-foreground/70 font-sans text-sm tracking-wide",
+        whatsapp: "bg-[#25D366] text-white hover:bg-[#20BD5A] rounded-full shadow-lg hover:shadow-xl",
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        sm: "h-9 px-3",
+        lg: "h-11 px-8",
+        xl: "h-14 px-10 text-base",
         icon: "h-10 w-10",
       },
     },
