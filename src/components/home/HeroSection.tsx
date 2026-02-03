@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-consultation.jpg";
+import heroImage from "@/assets/hero-maram.webp";
 
 const HeroSection = () => {
   return (
