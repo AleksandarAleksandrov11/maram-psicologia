@@ -11,7 +11,7 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Consulta de psicología acogedora"
-          className="w-full h-full object-cover object-right-top"
+          className="w-full h-full object-cover object-[70%_30%] md:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-transparent" />
       </div>
