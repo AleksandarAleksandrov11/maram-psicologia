@@ -2,34 +2,25 @@ import Layout from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import teamMaria from "@/assets/team-maria.jpg";
-import teamAna from "@/assets/team-ana.jpg";
-import teamLaura from "@/assets/team-laura.jpg";
+import teamMariaTrinidad from "@/assets/team-maria-trinidad.webp";
+import teamLucia from "@/assets/team-lucia.webp";
 
 const team = [
   {
-    name: "María García Ruiz",
+    name: "María Trinidad",
     title: "Psicóloga Sanitaria",
     specialty: "Ansiedad y Estrés",
     license: "M-32451",
-    image: teamMaria,
-    bio: "Con más de 10 años de experiencia, María se especializa en el tratamiento de trastornos de ansiedad y estrés. Su enfoque integrador combina técnicas cognitivo-conductuales con mindfulness para ofrecer un abordaje completo y personalizado.",
+    image: teamMariaTrinidad,
+    bio: "Con más de 10 años de experiencia, María Trinidad se especializa en el tratamiento de trastornos de ansiedad y estrés. Su enfoque integrador combina técnicas cognitivo-conductuales con mindfulness para ofrecer un abordaje completo y personalizado.",
   },
   {
-    name: "Ana Martínez López",
+    name: "Lucía Zazo",
     title: "Psicóloga Sanitaria",
-    specialty: "Depresión y Duelo",
+    specialty: "Depresión y Autoestima",
     license: "M-28934",
-    image: teamAna,
-    bio: "Ana aporta una mirada cálida y profesional al acompañamiento de procesos de duelo y estados depresivos. Formada en terapia humanista y EMDR, crea un espacio seguro donde cada persona puede explorar su mundo emocional.",
-  },
-  {
-    name: "Laura Sánchez Moreno",
-    title: "Psicóloga Sanitaria",
-    specialty: "Autoestima y Terapia de Pareja",
-    license: "M-35672",
-    image: teamLaura,
-    bio: "Laura se especializa en el trabajo con la autoestima y las relaciones de pareja. Su enfoque sistémico y narrativo ayuda a las personas a reescribir su historia y construir vínculos más saludables.",
+    image: teamLucia,
+    bio: "Lucía aporta una mirada cálida y profesional al acompañamiento de procesos emocionales y trabajo con la autoestima. Formada en terapia humanista y EMDR, crea un espacio seguro donde cada persona puede explorar su mundo emocional.",
   },
 ];
 
